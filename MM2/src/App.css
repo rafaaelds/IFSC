@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f8f6;
+  color: #1a5c2a;
+}
+.topo-sistema {
+  background-color: #a5c4b2;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.topo-sistema h1 {
+  font-size: 1.8rem;
+  color: #111;
+}
+.caixa-formulario {
+  max-width: 480px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border: 3px solid #1a5c2a;
+  padding: 28px 32px;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.08);
+}
+.caixa-formulario h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 22px;
+  color: #1a5c2a;
+  border-bottom: 2px solid #1a5c2a;
+  padding-bottom: 8px;
+}
+.campo {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.campo label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+.campo input {
+  padding: 10px 12px;
+  border: 2px solid #1a5c2a;
+  font-size: 0.95rem;
+  background-color: #f4fbf6;
+  color: #111;
+  outline: none;
+}
+.campo input:focus {
+  background-color: #ffffff;
+  border-color: #27ae60;
+}
+.erro {
+  color: #c0392b;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  font-weight: 600;
+}
+.btn-salvar {
+  width: 100%;
+  padding: 12px;
+  background-color: #1a5c2a;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s, background-color 0.2s;
+  margin-top: 10px;
+}
+.btn-salvar:hover:not(:disabled) {
+  background-color: #144620;
+}
+.btn-salvar:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.alerta-status {
+  margin-top: 24px;
+  padding: 12px;
+  border: 1px solid #1a5c2a;
+  background-color: #eafaf1;
+  border-radius: 4px;
+}
+.json-preview {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  overflow-x: auto;
+}.alerta-status.falha {
+  border-color: #c0392b;
+  background-color: #fdecea;
+  color: #8e2a1f;
+}
+.alerta-status p {
+  line-height: 1.4;
+}
+@media (max-width: 520px) {
+  .caixa-formulario {
+    margin: 20px 16px;
+    padding: 20px;
+  }
+  .topo-sistema h1 {
+    font-size: 1.4rem;
+  }
+}
