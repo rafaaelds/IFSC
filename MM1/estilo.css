@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Mozilla Text", sans-serif;
+    color: #1a5c2a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+.container {
+    background-color: #fff;
+    border: 3px solid #1a5c2a;
+    padding: 24px 32px;
+    width: 100%;
+    max-width: 460px;
+}
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a5c2a;
+    margin-bottom: 16px;
+    text-align: center;
+    border-bottom: 2px solid #1a5c2a;
+    padding-bottom: 10px;
+}
+label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.88rem;
+    color: #1a5c2a;
+    margin-bottom: 4px;
+}
+input {
+    width: 100%;
+    padding: 7px 12px;
+    border: 2px solid #1a5c2a;
+    border-radius: 0;
+    font-family: "Mozilla Text", sans-serif;
+    font-size: 0.9rem;
+    color: #1a5c2a;
+    background-color: #f4fbf6;
+    outline: none;
+    margin-bottom: 10px;
+}
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #c0392b;
+    color: #ffffff;
+    font-family: "Mozilla Text", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    margin-top: 4px;
+}
+button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+body.pagina-sistema {
+    display: block;
+    font-family: "Oswald", sans-serif;
+    background-color: #f6f8f7;
+    padding: 0;
+}
+.topo {
+    background-color: #a5c4b2;
+    box-shadow: 0 8px 6px -4px #4f6f5f;
+    text-align: center;
+    padding: 6px 16px;
+}
+.topo h1 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: #111;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 2px #fff;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    margin: 60px auto;
+    padding: 0 16px;
+}
+.menu h2 {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #111;
+}
+.menu a {
+    font-size: 1.6rem;
+    color: #111;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+.menu a:hover {
+    color: #3db45b;
+    border-bottom-color: #12461f;
+}
+.relatorio {
+    max-width: 920px;
+    margin: 50px auto;
+    padding: 0 16px;
+    text-align: center;
+}
+.tabela-veiculos {
+    width: 100%;
+    border: 1px solid #333;
+    border-spacing: 3px;
+    background-color: #fff;
+    box-shadow: 6px 6px 8px #888;
+}
+.tabela-veiculos caption {
+    font-size: 1.3rem;
+    color: #111;
+    margin-bottom: 4px;
+}
+.tabela-veiculos th {
+    background-color: #619682;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 6px 10px;
+    border: 1px solid #333;
+}
+.tabela-veiculos td {
+    background-color: #f1f7f3;
+    color: #111;
+    font-size: 1.15rem;
+    padding: 5px 10px;
+    border: 1px solid #333;
+}
+.tabela-veiculos tbody tr:hover td {
+    background-color: #dcece2;
+}
+.voltar {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: #1a5c2a;
+}
+@media (max-width: 600px) {
+    .topo h1 { font-size: 1.6rem; }
+    .tabela-veiculos th, .tabela-veiculos td { font-size: 0.95rem; padding: 4px; }
+}

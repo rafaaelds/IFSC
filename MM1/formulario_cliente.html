@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro dos Clientes - Lavação</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Clientes</h1>
+
+        <form action="cliente.php" method="POST">
+            <label>Nome:</label>
+            <input type="text" name="nome" required>
+
+            <label>Usuário:</label>
+            <input type="text" name="usuario" required>
+
+            <label>Senha:</label>
+            <input type="password" name="senha" required>
+
+            <label>E-mail:</label>
+            <input type="email" name="email" required>
+
+            <label>Celular:</label>
+            <input type="text" name="telefone" required>
+
+            <label>Endereço:</label>
+            <input type="text" name="endereco" required>
+
+            <button type="submit">Cadastrar!</button>
+        </form>
+    </div>
+</body>
+</html>
+
+/*
+antes eu havia colocado action="cadastro_cliente.php",
+mas o arquivo que processa o formulário é o cliente.php
+por causa desta confusão, ao enviar o formulário, o navegador tentava acessar
+um arquivo que não existia, e nada mais funcionava.
+mudei para action="cliente.php", que é o nome correto do arquivo
+*/

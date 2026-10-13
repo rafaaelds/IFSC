@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Veículos - Lavação</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body class="pagina-sistema">
+    <header class="topo">
+        <h1>Sistema Norteador - bem-vindo!</h1>
+    </header>
+
+    <main class="relatorio">
+        <table class="tabela-veiculos">
+            <caption>Relação de veículos cadastrados no banco de dados</caption>
+            <thead>
+                <tr>
+                    <th>Placa do veículo</th>
+                    <th>Marca do veículo</th>
+                    <th>Modelo do veículo</th>
+                </tr>
+            </thead>
+
+            <tbody id="corpo-tabela">
+                <tr>
+                    <td colspan="3">Carregando veículos...</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a class="voltar" href="home.html">Voltar ao início</a>
+    </main>
+
+    <script src="manipulador-ajax.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro de Veículos - Lavação</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Veículos</h1>
+
+
+        <form action="veiculo.php" method="POST">
+            <label>Número da Placa:</label>
+            <input type="text" name="placa" required>
+
+            <label>Marca:</label>
+            <input type="text" name="marca" required>
+
+            <label>Modelo:</label>
+            <input type="text" name="modelo" required>
+
+            <button type="submit">Cadastrar!</button>
+        </form>
+    </div>
+</body>
+</html>
+
+/*
+a mesma coisa aqui.
+o action estava mostrando cadastro_veiculo.php, mas o correto é veiculo.php
+também corrigi para bater com o nome real do arquivo
+*/
